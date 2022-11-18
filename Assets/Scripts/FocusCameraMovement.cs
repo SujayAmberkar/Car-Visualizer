@@ -5,28 +5,33 @@ using UnityEngine;
 public class FocusCameraMovement : MonoBehaviour
 {
     [SerializeField] private Camera cam;
-    Transform t;
-    bool a=false;
+    Transform newTransform;
+    Transform newRotation;
+    bool CamerIsAtPosition=true;
+    float cameraSpeed = 10f;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()
     {
-        
-        if(a){
-            cam.transform.position = Vector3.MoveTowards(cam.transform.position,t.position, 60 * Time.deltaTime);
+        if(!CamerIsAtPosition){
+            cam.transform.position = Vector3.MoveTowards(cam.transform.position,newTransform.position, cameraSpeed * Time.deltaTime);
+            cam.transform.rotation = Quaternion.RotateTowards(cam.transform.rotation,newRotation.rotation,60f*Time.deltaTime);
+            if(cam.transform.position==newTransform.position){
+                CamerIsAtPosition = true;
+            }
         }
         
         
     }
 
-    public void MoveCameraTo(Transform newPosition){
-        t = newPosition;
-        a = true;
-        // transform.position = Vector3.Lerp(transform.position, newPosition.position, Time.deltaTime);
+    public void MoveCameraTo(Transform targetTransform){
+        newTransform = targetTransform;
+        CamerIsAtPosition = false;    
+    }
+
+    public void RotateCameraTo(Transform targetRotation){
+        newRotation = targetRotation;
     }
 }

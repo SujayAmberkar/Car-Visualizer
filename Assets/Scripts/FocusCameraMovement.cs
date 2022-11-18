@@ -17,13 +17,11 @@ public class FocusCameraMovement : MonoBehaviour
     {
         if(!CamerIsAtPosition){
             cam.transform.position = Vector3.MoveTowards(cam.transform.position,newTransform.position, cameraSpeed * Time.deltaTime);
-            cam.transform.rotation = Quaternion.RotateTowards(cam.transform.rotation,newRotation.rotation,60f*Time.deltaTime);
+            cam.transform.LookAt(newRotation);
             if(cam.transform.position==newTransform.position){
                 CamerIsAtPosition = true;
             }
         }
-        
-        
     }
 
     public void MoveCameraTo(Transform targetTransform){

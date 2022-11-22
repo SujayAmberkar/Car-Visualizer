@@ -6,7 +6,7 @@ public class CameraControllerMouse : MonoBehaviour
 {
     [SerializeField] private Camera cam;
     [SerializeField] private Transform target;
-    [SerializeField] private float distanceToTarget = 10;
+    private float distanceToTarget = 6;
     [SerializeField] float cameraSpeed = 10f;
     private Vector3 previousPosition;
     

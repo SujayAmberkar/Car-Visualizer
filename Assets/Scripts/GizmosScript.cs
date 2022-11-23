@@ -6,18 +6,17 @@ public class GizmosScript : MonoBehaviour
 {
 
     public Camera cameraToLookAt;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  
 
-    // Update is called once per frame
     void Update()
     {
-        Vector3 v = cameraToLookAt.transform.position - transform.position;
-        v.x = v.z = 0.0f;
-        transform.LookAt( cameraToLookAt.transform.position - v ); 
-        transform.Rotate(0,180,0);
+            Vector3 v = cameraToLookAt.transform.position - transform.position;
+            float dist = Vector3.Distance(cameraToLookAt.transform.position,transform.position);
+            v.x = v.z = 0.0f;
+            transform.LookAt( cameraToLookAt.transform.position - v );
+            if(dist>2){
+                transform.Rotate(0,180,0); 
+            }
+                   
     }
 }

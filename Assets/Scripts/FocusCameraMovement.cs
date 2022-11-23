@@ -6,7 +6,7 @@ public class FocusCameraMovement : MonoBehaviour
 {
     [SerializeField] private Camera cam;
     Transform newTransform;
-    Transform newRotation;
+    Transform InfoPanel;
     bool CamerIsAtPosition=true;
     float cameraSpeed = 10f;
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class FocusCameraMovement : MonoBehaviour
     {
         if(!CamerIsAtPosition){
             cam.transform.position = Vector3.MoveTowards(cam.transform.position,newTransform.position, cameraSpeed * Time.deltaTime);
-            cam.transform.LookAt(newRotation);
+            cam.transform.LookAt(InfoPanel);
             if(cam.transform.position==newTransform.position){
                 CamerIsAtPosition = true;
             }
@@ -30,6 +30,6 @@ public class FocusCameraMovement : MonoBehaviour
     }
 
     public void RotateCameraTo(Transform targetRotation){
-        newRotation = targetRotation;
+        InfoPanel = targetRotation;
     }
 }

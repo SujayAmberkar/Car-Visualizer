@@ -8,6 +8,9 @@ TagManager:
   - Bumper
   - Handle
   - HeadLight
+  - Panel1
+  - Panel2
+  - Panel3
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,7 @@ public class InteriorCameraMouseController : MonoBehaviour
     Vector3 camInitialPos;
     Quaternion camInitialRot;
     float camInitialZoom;
+    
 
     void Start() {
            camInitialPos = cam.transform.position;

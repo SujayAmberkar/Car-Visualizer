@@ -17,6 +17,8 @@ public class GizmosScript : MonoBehaviour
             if(dist>2){
                 transform.Rotate(0,180,0); 
             }
+
+            
                    
     }
 }

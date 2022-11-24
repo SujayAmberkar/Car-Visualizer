@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColorChange : MonoBehaviour
 {
+    // variable declaration
     Color[] colors = {Color.red,Color.white,Color.gray};
     GameObject[] Parts;
     Color color;

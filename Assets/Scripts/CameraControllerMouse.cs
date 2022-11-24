@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraControllerMouse : MonoBehaviour
 {
+    // Variable declaration
     [SerializeField] private Camera cam;
     [SerializeField] private Transform target;
     private float distanceToTarget = 6;
@@ -15,9 +16,10 @@ public class CameraControllerMouse : MonoBehaviour
     float camInitialZoom;
 
     void Start() {
+        // store intial camera value
            camInitialPos = cam.transform.position;
            camInitialRot = cam.transform.rotation;
-           camInitialZoom = cam.fieldOfView;    
+           camInitialZoom = cam.fieldOfView;
     }
 
     void Update()
@@ -29,6 +31,7 @@ public class CameraControllerMouse : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+            
         }
         else if (Input.GetMouseButton(0))
         {

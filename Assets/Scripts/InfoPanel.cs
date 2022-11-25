@@ -18,6 +18,7 @@ public class InfoPanel : MonoBehaviour
         data.Add("Tyre","This is Tyre");
         data.Add("Hood","This is hood");
         data.Add("Bumper","This is Bumper");
+        ui.SetActive(false);
     }
 
     void Update()

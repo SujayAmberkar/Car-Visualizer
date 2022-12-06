@@ -30,8 +30,8 @@ public class CameraControllerMouse : MonoBehaviour
     void cameraMovements(){
         if (Input.GetMouseButtonDown(0))
         {
-            previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
-            
+            previousPosition = cam.ScreenToViewportPoint(Vector3.Lerp(cam.transform.position,Input.mousePosition,3f));
+                    
         }
         else if (Input.GetMouseButton(0))
         {
@@ -52,7 +52,4 @@ public class CameraControllerMouse : MonoBehaviour
         }
         cam.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * cameraSpeed;
     }
-
-    
-    
 }

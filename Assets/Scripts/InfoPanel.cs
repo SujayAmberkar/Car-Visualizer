@@ -15,9 +15,9 @@ public class InfoPanel : MonoBehaviour
 
     void Start() {
         // Add title and content in a dictionary "data"
-        data.Add("Tyre","This is Tyre");
-        data.Add("Hood","This is hood");
-        data.Add("Bumper","This is Bumper");
+        data.Add("Tyre","Pirelli tires for the Maserati are a perfect marriage of technology and innovation, made with a special tread compound that can tackle any weather condition without hesitation.");
+        data.Add("Engine","The F136, commonly known as Ferrari-Maserati engine, is a family of 90° V8 petrol engines");
+        data.Add("Park Assist"," Surround View Camera assists you during parking maneuvers by combining all the information provided by 4 cameras placed around your vehicle.");
         ui.SetActive(false);
     }
 

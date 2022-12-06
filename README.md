@@ -1,10 +1,6 @@
 # Car-Visualizer
 Project Progression(Bottom to Top)
 ![Screenshot 2022-12-06 152834](https://user-images.githubusercontent.com/38327075/205880038-c7cc0466-cf6c-4819-8d6a-f9f1e515a567.png)
-
-
-![Screenshot 2022-11-22 175605](https://user-images.githubusercontent.com/38327075/203313599-f5e957a8-f27b-451e-9df4-be34e238a86b.png)
-
-![Screenshot 2022-11-18 172518](https://user-images.githubusercontent.com/38327075/202699813-9d09b5e3-1190-4a69-9c7d-e529c3dc53fd.png)
-
-![Screenshot 2022-11-17 175600](https://user-images.githubusercontent.com/38327075/202446089-e4636a9d-6851-4cb5-aaff-5714a3e086e4.png)
+![Screenshot 2022-12-06 153756](https://user-images.githubusercontent.com/38327075/205882198-621e6814-1464-4f97-97bb-676a0d09440c.png)
+![Screenshot 2022-12-06 153512](https://user-images.githubusercontent.com/38327075/205882225-4a90b0e0-cb69-492e-8aa8-a981dfae74f4.png)
+![Screenshot 2022-12-06 153724](https://user-images.githubusercontent.com/38327075/205882244-0ebc695e-bea5-4112-959c-f60cc3c802b4.png)
